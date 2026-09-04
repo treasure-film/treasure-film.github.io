@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'QuickExpress';
+    font-style: normal;
+    font-weight: 400;
+    src: local('QuickExpress'), url('https://fonts.cdnfonts.com/s/6652/QuickExpress.woff') format('woff');
+}
+
+
