@@ -215,7 +215,7 @@ body.edit-mode .gitem:active{cursor:grabbing;}
 .about-bg{
   background:linear-gradient(160deg,#07090e 0%,#060708 40%,#090a0d 100%);
 }
-.about-grid{display:grid;grid-template-columns:.75fr 1.55fr;gap:5rem;align-items:start;}
+.about-grid{display:grid;grid-template-columns:.6fr 1.55fr;gap:4rem;align-items:start;}
 #portrait-wrap{aspect-ratio:3/4;position:relative;overflow:hidden;background:#0a0b0e;cursor:default;}
 .portrait-fill{
   position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
@@ -244,7 +244,7 @@ body.edit-mode .gitem:active{cursor:grabbing;}
 }
 .about-body{font-size:.92rem;line-height:2.1;color:rgba(200,194,182,.9);margin-bottom:1rem;}
 .about-specs{margin-top:2.5rem;border-top:1px solid var(--rule);}
-.spec-row{display:grid;grid-template-columns:1fr 1fr;gap:0;border-bottom:1px solid var(--rule);padding:1.25rem 0;}
+.spec-row{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-bottom:1px solid var(--rule);padding:1.1rem 0;}
 .spec-label{font-size:.6rem;letter-spacing:.12em;color:var(--gold);text-transform:uppercase;display:block;margin-bottom:.32rem;opacity:.9;}
 .spec-value{font-size:.94rem;color:rgba(240,236,228,.9);font-weight:300;display:block;}
 /* spec-row: 左寄せ統一 */
@@ -535,8 +535,8 @@ body.edit-mode #portrait-wrap{cursor:pointer;}
 body.edit-mode #portrait-wrap:hover #portrait-hint{opacity:1;}
 body.edit-mode #portrait-wrap:hover #portrait-hover{background:rgba(0,0,0,.25);}
 
-.spec-cell{display:flex;flex-direction:column;gap:.3rem;padding-right:2rem;}
-.spec-cell:nth-child(2){border-left:1px solid var(--rule);padding-left:2rem;padding-right:0;}
+.spec-cell{display:flex;flex-direction:column;gap:.25rem;padding-right:1.5rem;}
+.spec-cell:nth-child(n+2){border-left:1px solid var(--rule);padding-left:1.5rem;padding-right:0;}
 
 /* ── 制作フロー タイムライン ── */
 
@@ -672,7 +672,7 @@ body.edit-mode #portrait-wrap:hover #portrait-hover{background:rgba(0,0,0,.25);}
 <body class="" style="">
 
 <!-- NAV -->
-<nav id="main-nav" class="scrolled ruled">
+<nav id="main-nav" class="ruled scrolled">
   <button id="nav-hamburger" onclick="toggleMobileMenu()" aria-label="メニュー">
     <span></span><span></span><span></span>
   </button>
@@ -722,7 +722,7 @@ body.edit-mode #portrait-wrap:hover #portrait-hover{background:rgba(0,0,0,.25);}
         <p>Works</p>
         <h2 class="section-title">作品ギャラリー</h2>
       </div>
-      <span class="section-count">代表作 0選</span>
+      <span class="section-count">— works</span>
     </div>
     <div class="gallery-grid" id="gallery-grid">
       <div class="gitem gc1" data-genre="TVCM" data-title="自動車整備士を志すあなたを応援します" data-subtitle="自動車関連業界向け" data-year="2022" data-client="一般社団法人" data-duration="15秒" data-format="フルHD / TVCM規格" data-role="制作ディレクター" data-desc="自動車整備士不足解消のため、若い世代へ向けて訴求。短い尺の中にメッセージを凝縮した訴求力の高い映像です。" data-bg="linear-gradient(145deg,#e8eef8,#c8d4ec)" data-yt="https://youtu.be/3p1CdqwG9_w" onclick="openDetailPage(this)" draggable="false">
@@ -994,39 +994,20 @@ body.edit-mode #portrait-wrap:hover #portrait-hover{background:rgba(0,0,0,.25);}
         <p class="about-body">一本一本の映像に丁寧に向き合い、クライアントや視聴者に「見てよかった」と感じていただける作品づくりを信条としています。企画段階からのご相談にも対応しており、撮影・編集・納品まで一貫してお任せいただけます。</p><p class="about-body">長年培った撮影・編集スキルと人との関わりを大切にする姿勢で、あなたの宝物になる映像づくりをお手伝いします。</p>
         <div class="about-specs">
           <div class="spec-row">
-            <div class="spec-cell">
-              <span class="spec-label">活動拠点</span>
-              <span class="spec-value">広島 / 全国対応</span>
-            </div>
-            <div class="spec-cell">
-              <span class="spec-label">業歴</span>
-              <span class="spec-value">20年以上</span>
-            </div>
+            <div class="spec-cell"><span class="spec-label">活動拠点</span><span class="spec-value">広島 / 全国対応</span></div>
+            <div class="spec-cell"><span class="spec-label">業歴</span><span class="spec-value">20年以上</span></div>
+            <div class="spec-cell"><span class="spec-label">得意ジャンル</span><span class="spec-value">Wedding / 企業VP / TVCM</span></div>
           </div>
           <div class="spec-row">
-            <div class="spec-cell">
-              <span class="spec-label">得意ジャンル</span>
-              <span class="spec-value">Wedding / 企業VP / TVCM</span>
-            </div>
-            <div class="spec-cell">
-              <span class="spec-label">使用機材</span>
-              <span class="spec-value">Canon EOS C50 /SONY PXW-X320</span>
-            </div>
+            <div class="spec-cell"><span class="spec-label">使用機材</span><span class="spec-value">Canon EOS C50 / SONY PXW-X320</span></div>
+            <div class="spec-cell"><span class="spec-label">編集ソフト</span><span class="spec-value">Premiere Pro / After Effects / EDIUS</span></div>
+            <div class="spec-cell"><span class="spec-label">対応解像度</span><span class="spec-value">4K / フルHD</span></div>
           </div>
-          <div class="spec-row">
-            <div class="spec-cell">
-              <span class="spec-label">編集ソフト</span>
-              <span class="spec-value">Premiere Pro / After Effects / EDIUS</span>
-            </div>
-            <div class="spec-cell">
-              <span class="spec-label">対応解像度</span>
-              <span class="spec-value">4K / フルHD</span>
-            </div>
-          </div>
+        </div></div>
         </div>        </div>
       </div>
-    </div>
-  </div>
+    
+  
 
 
 <!-- PRICING -->
@@ -1168,7 +1149,7 @@ body.edit-mode #portrait-wrap:hover #portrait-hover{background:rgba(0,0,0,.25);}
       <button class="wdp-top-btn" onclick="closeDetailPage();window.scrollTo(0,0);">TOP</button>
     </div>
   </div>
-  <div class="wdp-video-wrap" id="wdp-video-wrap"><div class="wdp-video-inner" style="padding-top: 56.25%;"><div class="wdp-video-frame" id="wdp-video-frame"><iframe src="./index_files/saved_resource.html" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture;web-share" allowfullscreen="" referrerpolicy="strict-origin-when-cross-origin" style="position: absolute; inset: 0px; width: 100%; height: 100%; border-width: medium; border-style: none; border-color: currentcolor; border-image: none;"></iframe></div></div></div>
+  <div class="wdp-video-wrap" id="wdp-video-wrap"><div class="wdp-video-inner" style="padding-top: 56.25%;"><div class="wdp-video-frame" id="wdp-video-frame"><div style="position: absolute; inset: 0px; cursor: pointer; background: rgb(0, 0, 0);"><img src="./index_files/index.html" style="position: absolute; inset: 0px; width: 100%; height: 100%; object-fit: cover;"><div style="position: absolute; inset: 0px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1rem; background: rgba(0, 0, 0, 0.3);"><div style="width:72px;height:72px;background:rgba(220,0,0,.92);border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(0,0,0,.4);"><svg width="28" height="28" viewBox="0 0 24 24" fill="#fff"><polygon points="9,6 20,12 9,18"></polygon></svg></div><a href="https://www.youtube.com/watch?v=lBHi6Ghu0Yg" target="_blank" rel="noopener" onclick="event.stopPropagation()" style="font-size:.75rem;color:rgba(255,255,255,.85);text-decoration:none;border-bottom:1px solid rgba(255,255,255,.4);padding-bottom:2px;letter-spacing:.05em;">YouTubeで見る</a></div></div></div></div></div>
   <div class="wdp-body">
     <span class="wdp-genre" id="wdp-genre">SNS 広告</span>
     <h2 class="wdp-title" id="wdp-title">unbirthday</h2>
@@ -1590,6 +1571,61 @@ function openDetailPage(el){
 }
 function renderDetailPage(w,idx){
   var page=document.getElementById('work-detail-page');
+
+  // ── テキスト情報を更新 ──
+  var elGenre=document.getElementById('wdp-genre');
+  var elTitle=document.getElementById('wdp-title');
+  var elSub  =document.getElementById('wdp-subtitle');
+  var elDesc =document.getElementById('wdp-desc');
+  if(elGenre)elGenre.textContent=w.genre||'';
+  if(elTitle)elTitle.textContent=w.title||'';
+  if(elSub)  elSub.textContent  =w.subtitle||'';
+  if(elDesc) elDesc.textContent =w.desc||'';
+
+  // ── スペック更新 ──
+  var se=document.getElementById('wdp-specs');
+  if(se){
+    var specs=[
+      {label:'クライアント',val:w.client},
+      {label:'制作年',val:w.year},
+      {label:'尺 / 仕様',val:w.duration},
+      {label:'フォーマット',val:w.fmt||w.format},
+      {label:'担当',val:w.role}
+    ];
+    se.innerHTML='';
+    specs.forEach(function(sp,i){
+      var d=document.createElement('div');
+      d.className='wdp-spec';
+      if(i===3)d.style.borderTop='1px solid rgba(255,255,255,.08)';
+      d.innerHTML='<p class="wdp-spec-label">'+sp.label+'</p><p class="wdp-spec-val">'+(sp.val||'—')+'</p>';
+      se.appendChild(d);
+    });
+  }
+
+  // ── 他の作品グリッド更新 ──
+  var mg=document.getElementById('wdp-more-grid');
+  if(mg){
+    mg.innerHTML='';
+    var allGitems=Array.from(document.querySelectorAll('.gitem[data-title]'));
+    var currentTitle=w.title;
+    var others=allGitems.filter(function(gel){return gel.dataset.title!==currentTitle;});
+    others.sort(function(a,b){return(a.dataset.genre===w.genre?0:1)-(b.dataset.genre===w.genre?0:1);});
+    others.slice(0,6).forEach(function(gel){
+      var item=document.createElement('div');item.className='wdp-more-item';
+      item.onclick=function(){openDetailPage(gel);page.scrollTop=0;};
+      var td=document.createElement('div');td.className='wdp-more-thumb';
+      var gThumb=gel.querySelector('img.gitem-thumb');
+      var gYtUrl=gel.dataset.yt||'';var gYtId=extractYtId(gYtUrl);
+      var tsrc=gThumb&&gThumb.src?gThumb.src:(gYtId?'https://img.youtube.com/vi/'+gYtId+'/mqdefault.jpg':'');
+      if(tsrc){var ti=document.createElement('img');ti.src=tsrc;ti.alt=gel.dataset.title||'';ti.loading='lazy';td.appendChild(ti);}
+      else{td.style.background=gel.dataset.bg||'#111';}
+      item.appendChild(td);
+      var g2=document.createElement('p');g2.className='wdp-more-genre';g2.textContent=gel.dataset.genre||'';item.appendChild(g2);
+      var t2=document.createElement('p');t2.className='wdp-more-title';t2.textContent=gel.dataset.title||'';item.appendChild(t2);
+      mg.appendChild(item);
+    });
+  }
+
   var _vw=document.getElementById('wdp-video-wrap');
   if(_vw){
     if(w.isShort){
