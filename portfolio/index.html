@@ -4,9 +4,10 @@
 
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>TREASURE. — 映像制作</title>
-<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400&family=Noto+Sans+JP:wght@300;400&display=swap" rel="stylesheet">
 <link href="./index_files/css2" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Noto+Sans+JP:wght@300;400&display=swap" rel="stylesheet">
 <style>
 /* ═══ RESET ═══ */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
@@ -82,7 +83,7 @@ nav.scrolled{
   filter:brightness(1.15) drop-shadow(0 4px 40px rgba(0,0,0,.6));
 }
 .hero-tagline{
-  font-family:"Cormorant Garamond",serif;
+  font-family:"Cormorant Garamond","Georgia",serif;
   font-size:clamp(1.1rem,2vw,1.4rem);font-weight:300;font-style:italic;
   color:rgba(255,255,255,.82);line-height:1.85;margin-bottom:3rem;max-width:38rem;
 }
@@ -141,7 +142,7 @@ nav.scrolled{
   font-size:.65rem;letter-spacing:.42em;color:var(--gold);text-transform:uppercase;margin-bottom:.9rem;
 }
 .section-title{
-  font-family:"Cormorant Garamond",serif;
+  font-family:"Cormorant Garamond","Georgia",serif;
   font-size:clamp(2.4rem,4vw,3.6rem);font-weight:300;
   letter-spacing:-.01em;line-height:1.1;color:var(--smoke);
 }
@@ -175,7 +176,7 @@ nav.scrolled{
 }
 .gitem-thumb-area:hover .gitem-detail-overlay{opacity:1;}
 .gdo-genre{font-size:.58rem;letter-spacing:.32em;color:var(--gold);text-transform:uppercase;margin-bottom:.45rem;}
-.gdo-title{font-family:"Cormorant Garamond",serif;font-size:1.0rem;font-weight:300;line-height:1.3;margin-bottom:.35rem;}
+.gdo-title{font-family:"Cormorant Garamond","Georgia",serif;font-size:1.0rem;font-weight:300;line-height:1.3;margin-bottom:.35rem;}
 .gdo-desc{display:none;}
 .gdo-role{font-size:.65rem;color:rgba(255,255,255,.62);letter-spacing:.04em;margin-bottom:.6rem;}
 .gdo-cta{font-size:.6rem;color:var(--gold);letter-spacing:.15em;}
@@ -189,7 +190,7 @@ nav.scrolled{
   background:var(--gold);color:#000;padding:.18rem .6rem;border-radius:1px;
   margin-bottom:.4rem;font-weight:500;
 }
-.gitem-label-title{font-family:"Cormorant Garamond",serif;font-size:.98rem;color:rgba(240,236,228,.92);line-height:1.3;font-weight:300;}
+.gitem-label-title{font-family:"Cormorant Garamond","Georgia",serif;font-size:.98rem;color:rgba(240,236,228,.92);line-height:1.3;font-weight:300;}
 .gitem-label-sub{font-size:.7rem;color:var(--dim);}
 .gitem-delete-btn,.gitem-edit-btn{
   position:absolute;z-index:6;background:rgba(0,0,0,.88);
@@ -220,7 +221,7 @@ body.edit-mode .gitem:active{cursor:grabbing;}
   position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
   background:linear-gradient(145deg,#111418,#07080b);
 }
-.portrait-initials{font-family:"Cormorant Garamond",serif;font-size:5rem;font-weight:300;color:rgba(255,255,255,.06);letter-spacing:.15em;}
+.portrait-initials{font-family:"Cormorant Garamond","Georgia",serif;font-size:5rem;font-weight:300;color:rgba(255,255,255,.06);letter-spacing:.15em;}
 #portrait-img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;object-position:center;transform-origin:center;display:none;}
 #portrait-hover{position:absolute;inset:0;z-index:5;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0);transition:background .25s;pointer-events:none;}
 #portrait-hint{padding:.5rem 1.1rem;font-size:.7rem;color:#fff;background:rgba(0,0,0,.88);border:1px solid rgba(212,169,78,.35);opacity:0;transition:opacity .25s;letter-spacing:.05em;}
@@ -285,7 +286,7 @@ table.pricing-table tbody tr:hover{background:rgba(212,169,78,.05);}
 table.pricing-table td{padding:1.75rem 0;vertical-align:top;}
 table.pricing-table td:last-child{padding-right:0;}
 table.pricing-table td:last-child{text-align:right;white-space:nowrap;padding-left:1rem;}
-.pt-genre{font-family:"Cormorant Garamond",serif;font-size:1.2rem;font-weight:300;color:var(--smoke);margin-bottom:.28rem;}
+.pt-genre{font-family:"Cormorant Garamond","Georgia",serif;font-size:1.2rem;font-weight:300;color:var(--smoke);margin-bottom:.28rem;}
 .pt-sub{
     font-size: .72rem;
     color: var(--dim);
@@ -293,11 +294,9 @@ table.pricing-table td:last-child{text-align:right;white-space:nowrap;padding-le
 }
 .pt-desc{font-size:.86rem;color:rgba(200,194,182,.88);line-height:1.8;}
 .pt-price{
-    font-family: "Cormorant Garamond", serif;
-    font-size: 1.55rem;
-    font-weight: 400;
-    color: var(--gold2);
-    letter-spacing: -.01em;
+  font-family:"Cormorant Garamond","Georgia",serif;
+  font-size:1.55rem;font-weight:400;color:var(--gold2);
+  letter-spacing:-.01em;
 }
 .pt-price-note{font-size:.7rem;color:var(--dim);margin-top:.2rem;}
 .pricing-note{
@@ -334,7 +333,7 @@ table.pricing-table td:last-child{text-align:right;white-space:nowrap;padding-le
 }
 .contact-inner{display:grid;grid-template-columns:1fr 1.5fr;gap:7rem;}
 .contact-lead{
-  font-family:"Cormorant Garamond",serif;
+  font-family:"Cormorant Garamond","Georgia",serif;
   font-size:clamp(1.5rem,2.8vw,2.2rem);font-weight:300;font-style:italic;
   line-height:1.55;color:rgba(240,236,228,.95);margin-bottom:1.5rem;
 }
@@ -431,7 +430,7 @@ footer{
   text-transform:uppercase;margin-bottom:.95rem;display:block;
 }
 .wdp-title{
-  font-family:"Cormorant Garamond",serif;
+  font-family:"Cormorant Garamond","Georgia",serif;
   font-size:clamp(2rem,4vw,2.4rem);font-weight:300;
   line-height:1.1;margin-bottom:.6rem;
 }
@@ -464,7 +463,7 @@ footer{
 }
 .wdp-more-item:hover .wdp-more-thumb img{transform:scale(1.06);filter:brightness(.48);}
 .wdp-more-genre{font-size:.54rem;letter-spacing:.28em;color:var(--gold);text-transform:uppercase;padding:.65rem .7rem .2rem;}
-.wdp-more-title{font-family:"Cormorant Garamond",serif;font-size:.92rem;font-weight:300;color:rgba(240,236,228,.68);padding:0 .7rem .7rem;line-height:1.3;}
+.wdp-more-title{font-family:"Cormorant Garamond","Georgia",serif;font-size:.92rem;font-weight:300;color:rgba(240,236,228,.68);padding:0 .7rem .7rem;line-height:1.3;}
 
 /* ═══ MODALS ═══ */
 .work-modal-bg{
@@ -480,7 +479,7 @@ footer{
   width:90%;max-width:640px;max-height:90vh;overflow-y:auto;padding:2.5rem;
 }
 .work-modal-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:2rem;padding-bottom:1.2rem;border-bottom:1px solid var(--rule);}
-.work-modal-header h3{font-family:"Cormorant Garamond",serif;font-size:1.5rem;font-weight:300;color:var(--smoke);}
+.work-modal-header h3{font-family:"Cormorant Garamond","Georgia",serif;font-size:1.5rem;font-weight:300;color:var(--smoke);}
 .work-modal-close{background:none;border:none;color:var(--dim);font-size:1.5rem;cursor:pointer;transition:color .2s;line-height:1;}
 .work-modal-close:hover{color:var(--smoke);}
 .am-field{margin-bottom:1.15rem;}
@@ -640,7 +639,7 @@ body.edit-mode #portrait-wrap:hover #portrait-hover{background:rgba(0,0,0,.25);}
 }
 .step-body{flex:1;}
 .step-body h3{
-  font-family:"Cormorant Garamond",serif;
+  font-family:"Cormorant Garamond","Georgia",serif;
   font-size:1.25rem;font-weight:400;color:var(--smoke);
   margin-bottom:.75rem;
 }
@@ -1631,105 +1630,38 @@ function renderDetailPage(w,idx){
   var vf=document.getElementById('wdp-video-frame');vf.innerHTML='';
   var embedCode=(w.embed||'').trim();
   var ytId=w.ytId||extractYtId(w.yt||'');
-  // embedコードからもytIdを補完
   if(!ytId&&embedCode){var em=embedCode.match(/youtube\.com\/embed\/([A-Za-z0-9_-]{11})/);if(em)ytId=em[1];}
 
   if(embedCode||ytId){
-    // サムネイルfacade → クリックでiframe再生（URL・埋め込みコード両対応）
-    var thumbUrl=ytId?'https://img.youtube.com/vi/'+ytId+'/maxresdefault.jpg':'';
-    var ytLink=ytId?'https://www.youtube.com/watch?v='+ytId:'';
-
-    var facade=document.createElement('div');
-    facade.style.cssText='position:absolute;inset:0;cursor:pointer;background:#000;';
-
-    // サムネイル画像
-    if(thumbUrl){
-      var timg=document.createElement('img');
-      timg.src=thumbUrl;
-      timg.onerror=function(){this.src='https://img.youtube.com/vi/'+ytId+'/hqdefault.jpg';};
-      timg.style.cssText='position:absolute;inset:0;width:100%;height:100%;object-fit:cover;';
-      facade.appendChild(timg);
+    // iframeを直接表示（サムネイルfacadeなし）
+    var ifr=document.createElement('iframe');
+    if(embedCode){
+      var tmp2=document.createElement('div');
+      tmp2.innerHTML=embedCode;
+      var srcIfr=tmp2.querySelector('iframe');
+      var baseSrc=srcIfr?srcIfr.getAttribute('src'):'';
+      // shortsのURLを通常embedに変換
+      baseSrc=baseSrc.replace('/shorts/','/embed/');
+      ifr.src=baseSrc+(baseSrc.indexOf('?')>=0?'&':'?')+'rel=0';
+    } else {
+      ifr.src='https://www.youtube.com/embed/'+ytId+'?rel=0&fs=1';
     }
-
-    // オーバーレイ: 再生ボタン + リンク
-    var overlay=document.createElement('div');
-    overlay.style.cssText='position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem;background:rgba(0,0,0,.3);';
-    overlay.innerHTML='<div style="width:72px;height:72px;background:rgba(220,0,0,.92);border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(0,0,0,.4);">'
-      +'<svg width="28" height="28" viewBox="0 0 24 24" fill="#fff"><polygon points="9,6 20,12 9,18"/></svg>'
-      +'</div>'
-      +(ytLink?'<a href="'+ytLink+'" target="_blank" rel="noopener" onclick="event.stopPropagation()" style="font-size:.75rem;color:rgba(255,255,255,.85);text-decoration:none;border-bottom:1px solid rgba(255,255,255,.4);padding-bottom:2px;letter-spacing:.05em;">YouTubeで見る</a>':'');
-    facade.appendChild(overlay);
-
-    // クリック: iframeに差し替え
-    facade.onclick=function(e){
-      if(e.target.tagName==='A')return;
-      var ifr=document.createElement('iframe');
-      if(embedCode){
-        // 埋め込みコードからsrcを抽出してautoplay付きに
-        var tmp=document.createElement('div');
-        tmp.innerHTML=embedCode;
-        var srcIfr=tmp.querySelector('iframe');
-        var baseSrc=srcIfr?srcIfr.getAttribute('src'):'';
-        ifr.src=baseSrc+(baseSrc.indexOf('?')>=0?'&':'?')+'autoplay=1';
-      } else {
-        ifr.src='https://www.youtube.com/embed/'+ytId+'?autoplay=1&rel=0&fs=1';
-      }
-      ifr.allow='accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture;web-share';
-      ifr.setAttribute('allowfullscreen','');
-      ifr.setAttribute('referrerpolicy','strict-origin-when-cross-origin');
-      ifr.style.cssText='position:absolute;inset:0;width:100%;height:100%;border:none;';
-      vf.innerHTML='';vf.appendChild(ifr);
-    };
-    vf.appendChild(facade);
-  } else {
-    var ph=document.createElement('div');ph.style.cssText='position:absolute;inset:0;background:'+(w.bg||'#eee')+';';
-    if(w.thumb){var timg=document.createElement('img');timg.src=w.thumb;timg.style.cssText='width:100%;height:100%;object-fit:cover;position:absolute;inset:0;';ph.appendChild(timg);}
+    ifr.allow='accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture;web-share';
+    ifr.setAttribute('allowfullscreen','');
+    ifr.setAttribute('referrerpolicy','strict-origin-when-cross-origin');
+    ifr.style.cssText='position:absolute;inset:0;width:100%;height:100%;border:none;';
+    vf.appendChild(ifr);
+  }else{
+    var ph=document.createElement('div');
+    ph.style.cssText='position:absolute;inset:0;background:'+(w.bg||'#111')+';';
+    if(w.thumb){
+      var timg=document.createElement('img');
+      timg.src=w.thumb;
+      timg.style.cssText='width:100%;height:100%;object-fit:cover;position:absolute;inset:0;';
+      ph.appendChild(timg);
+    }
     vf.appendChild(ph);
   }
-  document.getElementById('wdp-genre').textContent=w.genre||'';
-  document.getElementById('wdp-title').textContent=w.title||'';
-  document.getElementById('wdp-subtitle').textContent=w.subtitle||'';
-  document.getElementById('wdp-desc').textContent=w.desc||'';
-  // 詳細ページ項目: 3列×2行グリッド
-  // 行1: クライアント / 制作年 / 尺・仕様
-  // 行2: フォーマット / 担当
-  var specs=[
-    {label:'クライアント',val:w.client},
-    {label:'制作年',val:w.year},
-    {label:'尺 / 仕様',val:w.duration},
-    {label:'フォーマット',val:w.fmt||w.format},
-    {label:'担当',val:w.role}
-  ];
-  var se=document.getElementById('wdp-specs');se.innerHTML='';
-  specs.forEach(function(sp,i){
-    var d=document.createElement('div');
-    d.className='wdp-spec';
-    // 4番目(index3)のフォーマットは2行目先頭
-    if(i===3){d.style.borderTop='1px solid rgba(255,255,255,.1)';}
-    d.innerHTML='<p class="wdp-spec-label">'+sp.label+'</p><p class="wdp-spec-val">'+(sp.val||'—')+'</p>';
-    se.appendChild(d);
-  });
-  var mg=document.getElementById('wdp-more-grid');mg.innerHTML='';
-  // DOMから全gitemを取得してサムネイルも含めて表示
-  var allGitems=Array.from(document.querySelectorAll('.gitem[data-title]'));
-  var currentTitle=w.title;
-  var others=allGitems.filter(function(gel){return gel.dataset.title!==currentTitle;});
-  // 同ジャンル優先
-  others.sort(function(a,b){return(a.dataset.genre===w.genre?0:1)-(b.dataset.genre===w.genre?0:1);});
-  others.slice(0,6).forEach(function(gel){
-    var item=document.createElement('div');item.className='wdp-more-item';
-    item.onclick=function(){openDetailPage(gel);page.scrollTop=0;};
-    var td=document.createElement('div');td.className='wdp-more-thumb';
-    var gThumbImg=gel.querySelector('img.gitem-thumb');
-    var gYtUrl=gel.dataset.yt||'';var gYtId=extractYtId(gYtUrl);
-    var tsrc=gThumbImg?gThumbImg.src:(gYtId?'https://img.youtube.com/vi/'+gYtId+'/mqdefault.jpg':'');
-    if(tsrc){var ti=document.createElement('img');ti.src=tsrc;ti.alt=gel.dataset.title;ti.loading='lazy';td.appendChild(ti);}
-    else{td.style.background=gel.dataset.bg||'#eee';}
-    item.appendChild(td);
-    item.innerHTML+='<p class="wdp-more-genre">'+(gel.dataset.genre||'')+'</p><p class="wdp-more-title">'+(gel.dataset.title||'')+'</p>';
-    mg.appendChild(item);
-  });
-  page.classList.add('open');page.scrollTop=0;document.body.style.overflow='hidden';
 }
 function closeDetailPage(){
   var page=document.getElementById('work-detail-page');page.classList.remove('open');document.body.style.overflow='';
